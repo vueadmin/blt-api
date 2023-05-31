@@ -24,8 +24,6 @@ Route::get('/sources/list', 'App\Http\Controllers\SourcesController@list');
 Route::get('/sources/list/new', 'App\Http\Controllers\SourcesController@latest');
 Route::get('/sources/list/{index}', 'App\Http\Controllers\SourcesController@byIndex');
 Route::get('/sources/creatt', 'App\Http\Controllers\SourcesController@create');
-Route::post('/sources/create', 'App\Http\Controllers\SourcesController@create')->middleware('cors');
 
 Route::get('/uploads/create', 'App\Http\Controllers\UploadsController@create');
-Route::post('/uploads/create', 'App\Http\Controllers\UploadsController@create')->middleware('cors');
 Route::get('/uploads/index', 'App\Http\Controllers\UploadsController@index');
